@@ -40,9 +40,8 @@ Windows 使用 [rkdeveloptool](/rock5/rock5itx/low-level-dev/rkdeveloptool)
 
 Linux/Mac 使用 [rkdevtool](/rock5/rock5itx/low-level-dev/rkdevtool)
 
-下载 [zero.img](https://dl.radxa.com/rock5/sw/images/others/zero.img.gz) 并解压，然后执行下面的命令
-
 ```bash
+dd if=/dev/zero of=zero.img bs=16M count=1
 rkdeveloptool db rk3588_spl_loader_v1.08.111.bin (需选择步骤 1 中 下载的 loader 文件)
 rkdeveloptool wl 0 zero.img
 rkdeveloptool rd
@@ -93,9 +92,7 @@ rkdeveloptool rd
 
 ## 系统安装
 
-1. 将micro usb 线缆连接到主机
-
-2. 进入 maskrom 模式
+进入 maskrom 模式
 
 - 断开开发板电源
 - 移除 SD 卡

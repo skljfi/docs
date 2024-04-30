@@ -42,9 +42,8 @@ Windows use [rkdeveloptool](/rock5/rock5itx/low-level-dev/rkdeveloptool)
 
 Linux/Mac use [rkdevtool](/rock5/rock5itx/low-level-dev/rkdevtool)
 
-Download [zero.img](https://dl.radxa.com/rock5/sw/images/others/zero.img.gz) and decompress it, then execute the following command
-
 ```bash
+dd if=/dev/zero of=zero.img bs=16M count=1
 rkdeveloptool db rk3588_spl_loader_v1.08.111.bin (select the loader file downloaded in step 1)
 rkdeveloptool wl 0 zero.img
 rkdeveloptool rd
@@ -149,9 +148,7 @@ Please go to [Resource Download Summary](/rock5/rock5itx/getting-started/downloa
 
 ## System Installation
 
-1. Connect the micro usb cable to the host computer.
-
-2. Enter maskrom mode
+Enter maskrom mode
 
 - Disconnect the board from the power supply.
 - Remove the SD card and insert the NVME SSD into the M.2 slot of the ROCK 5 ITX
