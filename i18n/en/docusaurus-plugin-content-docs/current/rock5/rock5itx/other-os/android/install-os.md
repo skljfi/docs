@@ -7,7 +7,7 @@ import Etcher from '../../../../common/general/\_etcher.mdx'
 
 This document describes how to install an Android image to the ROCK 5 ITX.
 
-ROCK 5 ITX can be booted from microSD card , EMMC and SPI-NVME, depending on the boot method, the system will be installed on different media.
+ROCK 5 ITX can be booted from microSD card , EMMC and SPI+NVME, depending on the boot method, the system will be installed on different media.
 
 # Install the operating system
 
